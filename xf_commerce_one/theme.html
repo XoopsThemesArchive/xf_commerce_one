@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<title><{$xoops_sitename}> :: <{$xoops_pagetitle}></title>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_pagetitle}>, <{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_pagetitle}>, <{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="<{$xoops_url}>/backend.php" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_imageurl}>xsheet.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_imageurl}>blocks.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_imageurl}>style.css" />
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript"><!-- <{$xoops_js}> //--></script>
+<!-- xHTML xoops theme by Michael Hokamp [studioC] (c)2005 http://studiocreativ.de  --></head>
+<body>
+<div id="rechts">
+<!-- in our case i showed a google adsense script here width 160 and height 600 you might add the rightblock foreach here -->
+<script type="text/javascript"><!--
+google_ad_client = "pub-3082721740588789";
+google_ad_width = 160;
+google_ad_height = 600;
+google_ad_format = "160x600_as";
+google_ad_channel ="";
+google_color_border = "F6F6F6";
+google_color_bg = "F6F6F6";
+google_color_link = "336699";
+google_color_url = "336699";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script> 
+<!-- end of goolde adsense script -->
+</div> <!-- close id="rechts"  -->
+<div id="pagelayer">
+<div id="container">
+<div id="header">
+<div id="banner"><{$xoops_banner}></div>
+<div id="logo"><h1><a href="<{$xoops_url}>" title="<{$xoops_sitename}>"><span><{$xoops_sitename}></span></a></h1></div>
+</div><!-- close id="header"  -->
+<div id="links">
+<{if $xoops_lblocks == ''}> <{else}>
+<{foreach item=block from=$xoops_lblocks}>
+<div class="blocklinks"><{include file="$xoops_theme/blocks/theme_blockleft.html"}></div><{/foreach}>
+<{/if}>
+</div><!-- close id="links"  -->
+<div id="centercontent">
+<{if $xoops_showrblock == 1}>
+<div id="xoopsrightblock"><{foreach item=block from=$xoops_rblocks}><{include file="$xoops_theme/blocks/theme_blockright.html"}><{/foreach}></div>
+<{/if}>
+<{if $xoops_showcblock == 1}><{foreach item=block from=$xoops_clblocks}><{include file="$xoops_theme/blocks/theme_blockcenter_l.html"}><{/foreach}>
+<{foreach item=block from=$xoops_ccblocks}><{include file="$xoops_theme/blocks/theme_blockcenter_c.html"}><{/foreach}><{/if}>
+<div id="modulcontent"><{$xoops_contents}></div>
+<{if $xoops_showcblock == 1}><{foreach item=block from=$xoops_crblocks}><{include file="$xoops_theme/blocks/theme_blockcenter_r.html"}><{/foreach}><{/if}></div>
+<!-- close id="centercontent"  -->
+<div id="centerclearing"></div><!-- close id="centerclearing"  -->
+<div id="footer"><div class="innerfooter"><{$xoops_footer}><br />XOOPS Theme (c)2005 hokamp - <a href="http://xoopsfactory.de" target="_blank">XOOPSFACTORY.de</a></div></div><!-- close id="footer"  -->
+</div><!-- close id="container"  -->
+</div><!-- close id="pagelayer"  -->
+</body>
+<!-- xHTML xoops theme by Michael Hokamp [studioC] (c)2005 <a href="http://studiocreativ.de">http://studiocreativ.de</a> <a href="http://xoopsfactory.de">http://xoopsfactory.de</a> -->
+</html>

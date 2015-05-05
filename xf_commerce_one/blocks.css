@@ -1,0 +1,66 @@
+/* CSS document by Michael Hokamp [studioC] (c)2005 http://studiocreativ.de  */
+div.lblocktitle h1 {
+background: url(onl.gif) no-repeat left center;
+font-size:12px;
+padding:5px;margin:0px;padding-left: 33px;
+font-weight: normal;
+color: #fff;
+}
+div.lblocktitle{
+width:165px;padding:0px;margin:0px;
+background : #2F5376;
+border-top: 1px solid #111;  
+border-bottom: 1px solid #111;
+}
+
+div.rblocktitle {
+background: url(onr.gif) no-repeat left center;
+font-size:12px;
+padding:5px;margin:0px;padding-left: 33px;
+}
+div.ccblocktitle {
+background: url(oncl.gif) no-repeat left center;
+padding:5px;margin:0px;padding-left: 18px;
+}
+div.clblocktitle {
+background: url(oncc.gif) no-repeat left center;
+padding:5px;margin:0px;padding-left: 18px;
+}
+div.crblocktitle {
+background: url(oncr.gif) no-repeat left center;
+padding:5px;margin:0px;padding-left: 18px;
+}
+div.lblockcontent {
+padding:7px;
+color: #111;
+}
+#mainmenu a {
+display: block;
+}
+#usermenu a {
+display: block;
+}
+div.rblockcontent {
+}
+div.ccblockcontent {
+text-align: justify;
+}
+div.clblockcontent {
+text-align: justify;
+}
+div.crblockcontent {
+text-align: justify;
+}
+#xoopsrightblock {
+width: 180px;
+float:right;
+margin-left:15px;
+margin-bottom:15px;
+}
+div#modulcontent {
+}
+p.right  {
+text-align: right;
+font-size: 12px;
+}
+/* CSS document by Michael Hokamp [studioC] (c)2005 http://studiocreativ.de  */
